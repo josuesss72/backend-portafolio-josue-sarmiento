@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_shared_socials",
+  "info": {
+    "displayName": "Social",
+    "icon": "",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "color": {
+      "type": "string",
+      "required": true,
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
+    },
+    "colorText": {
+      "type": "string",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "regex": "^(https?:\\/\\/)?([a-zA-Z0-9\\-\\.]+)\\.([a-zA-Z]{2,})(:[0-9]{1,5})?(\\/.*)?$",
+      "required": true
+    }
+  }
+}
