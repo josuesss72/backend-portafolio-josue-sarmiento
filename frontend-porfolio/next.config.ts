@@ -10,6 +10,10 @@ const nextConfig: NextConfig = {
         port: "1337", // Asegúrate de que el puerto coincide con el de tu Strapi
         pathname: "/uploads/**", // Asegúrate de que coincide con la estructura de tus URLs
       },
+      {
+        protocol: "https",
+        hostname: "portafolio-nextjs-josue-production.up.railway.app",
+      },
     ],
   },
 };
